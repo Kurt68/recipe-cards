@@ -3,10 +3,7 @@
   "private": false,
   "version": "1.0",
   "type": "module",
-  "main": "api/server.js",
   "scripts": {
-    "start": "node api/server.js",
-    "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
