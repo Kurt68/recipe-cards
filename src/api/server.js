@@ -1,7 +1,7 @@
 // See https://github.com/typicode/json-server#module
 import jsonServer from 'json-server'
 const server = jsonServer.create()
-const router = jsonServer.router('src/api/db.json')
+const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
 
 server.use(middlewares)
