@@ -1,0 +1,109 @@
+{
+  "comments": [
+    {
+      "recipeId": 1,
+      "id": 1,
+      "email": "Lucy@gmail.com",
+      "body": "This was so easy to make. I love olive oil and it is so tasty. I took your advice and made a sandwich with Mozzarella and I used sour dough bread. I grilled it in the pan and topped it off with Classico sauce!"
+    },
+    {
+      "recipeId": 2,
+      "id": 2,
+      "email": "martin@gmail.com",
+      "body": "Enjoyed this classic recipe thanks for sharing!"
+    }
+  ],
+  "recipes": [
+    {
+      "chefId": 1,
+      "id": 1,
+      "title": "Fried Egg Plant",
+      "serves": "4",
+      "prepTime": "5 mins",
+      "totalTime": "30 mins",
+      "ingredientOne": "One Large Egg Plant",
+      "ingredientTwo": "2 Eggs",
+      "ingredientThree": "Italian Style Bread Crumbs",
+      "ingredientFour": "Olive Oil",
+      "directionsOne": "-Slice eggplant from top to bottom (on its side). Cut about 1/8 in thickness.",
+      "directionsTwo": "-Heat frying pan on medium. Pour in about a tablespoon or more of olive oil to cover pan.",
+      "directionsThree": "-Wisk two eggs in bowl.",
+      "directionsFour": "-Sprinkle bread crumbs on plate.",
+      "directionsFive": "-Dip each sliced eggplant into egg batter and cover with bread crumbs on each side.",
+      "directionsSix": "-Fill frying plan with battered egg plant slices.",
+      "directionsSeven": "-Flip eggplant when golden brown.",
+      "directionsEight": "-Let cool on plate with paper towel to absorb excess oil.",
+      "directionsNine": "-Enjoy solo or with a main meal."
+    },
+    {
+      "chefId": 1,
+      "id": 2,
+      "title": "Pan Fried Blackened Cajun Catfish",
+      "serves": "2",
+      "prepTime": "5 mins",
+      "totalTime": "12 mins",
+      "ingredientOne": "Two Catfish Fillets",
+      "ingredientTwo": "Cajun Spice",
+      "ingredientThree": "One Egg",
+      "ingredientFour": "Bread Crumbs",
+      "ingredientFive": "Butter",
+      "directionsOne": "-Wisk egg and dip fillet so egg batter covers entire fish.",
+      "directionsTwo": "-Cover with bread crumbs both sides.",
+      "directionsThree": "-Shake cajun spice over fillet on both sides.",
+      "directionsFour": "-Melt butter in fying pan medium/high heat.",
+      "directionsFive": "-Make sure pan is hot and add fillets.",
+      "directionsSix": "-Cook on each side for a few minutes.",
+      "directionsSeven": "-Test with fork to make sure fish flakes before serving."
+    },
+    {
+      "chefId": 2,
+      "id": 3,
+      "title": "Gazpacho",
+      "serves": "4",
+      "prepTime": "20 mins",
+      "totalTime": "30 mins",
+      "ingredientOne": "1 1/2 pounds vine-ripened tomatoes, peeled, seeded and chopped",
+      "ingredientTwo": "Tomato juice",
+      "ingredientThree": "1 cup cucumber, peeled, seeded and chopped",
+      "ingredientFour": "1/2 cup chopped red bell pepper",
+      "ingredientFive": "1 medium garlic clove, minced",
+      "ingredientSix": "1 small jalapeno, seeded and minced",
+      "ingredientSeven": "1/4 cup extra-virgin olive oil",
+      "ingredientEight": "1 lime, juiced",
+      "ingredientNine": "2 teaspoons balsamic vinegar",
+      "ingredientTen": "2 teaspoons Worcestershire sauce",
+      "ingredientEleven": "1/2 teaspoon toasted, ground cumin",
+      "ingredientTwelve": "1 teaspoon kosher salt",
+      "ingredientThirteen": "1/4 teaspoon freshly ground black pepper",
+      "ingredientFourteen": "2 tablespoons fresh basil leaves, chiffonade",
+      "directionsOne": "-Fill a 6-quart pot halfway full of water, set over high heat and bring to a boil.",
+      "directionsTwo": "-Make an X with a paring knife on the bottom of the tomatoes",
+      "directionsThree": "-Drop the tomatoes into the boiling water for 15 seconds, remove and transfer to an ice bath and allow to cool until able to handle, approximately 1 minute.",
+      "directionsFour": "-Remove and pat dry. Peel, core and seed the tomatoes.",
+      "directionsFive": "-When seeding the tomatoes, place the seeds and pulp into a fine mesh strainer set over a bowl in order to catch the juice.",
+      "directionsSix": "-Press as much of the juice through as possible and then add enough bottled tomato juice to bring the total to 1 cup",
+      "directionsSeven": "-Place the tomatoes and juice into a large mixing bowl",
+      "directionsEight": "-Add the cucumber, bell pepper, red onion, jalapeno, garlic clove, olive oil, lime juice, balsamic vinegar, Worcestershire, cumin, salt and pepper and stir to combine.",
+      "directionsNine": "-Transfer 1 1/2 cups of the mixture to a blender and puree for 15 to 20 seconds on high speed.",
+      "directionsTen": "-Return the pureed mixture to the bowl and stir to combine.",
+      "directionsEleven": "-Cover and chill for 2 hours and up to overnight.",
+      "directionsTwelve": "-Serve with chiffonade of basil."
+    }
+  ],
+  "chefs": [
+    {
+      "id": 1,
+      "name": "Kurt Hogentogler",
+      "username": "Kurt",
+      "email": "kurt.ah@outlook.com",
+      "profile": "Software engineer by day and chef hobbyist on the weekends. Some of my favorite dishes are fried egg plant, pan fried blackened cajun catfish, and seared tuna. Favorite dessert is carrot cake."
+    },
+    {
+      "id": 2,
+      "name": "Marina Gomez",
+      "username": "Marina",
+      "email": "marina@gmail.com",
+      "profile": "I've been cooking since I was a child. My mother made classic Spanish dishes and I enjoy making those today. They bring back great memories."
+    }
+  ]
+}

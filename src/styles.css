@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Kalam', cursive;
+  background-color: #fbf6d6;
+  font-weight: 300;
+}
+.header,
+.footer {
+  background-color: hsl(37, 66%, 9%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+.footer {
+  bottom: 0;
+  padding: 0 1rem;
+}
+.header .spoon {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.15rem;
+}
+.header .spoon img {
+  width: 42px;
+  height: 37px;
+  margin-right: 7px;
+}
+.footer .chef img {
+  width: 20px;
+  height: 35px;
+  top: 4px;
+  position: relative;
+}
+.footer .spoon img {
+  width: 40px;
+  height: 35px;
+  top: 4px;
+  position: relative;
+}
+
+.link-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 400;
+}
+.link {
+  padding: 0.5rem;
+}
+.link a {
+  color: white;
+  text-decoration: none;
+}
+.link a:hover,
+.link a:focus {
+  text-decoration: underline;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem 5rem 1rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-row {
+  display: flex;
+  gap: 1.2rem;
+}
+@media (max-width: 575px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+.two-column-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex-grow: 1;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex-grow: 1;
+}
+.form-group label {
+  font-weight: 400;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.5rem;
+  border: none;
+}
+.form-group textarea {
+  resize: vertical;
+  min-height: 88px;
+}
+.error-message {
+  color: hsl(19, 83%, 46%);
+}
+.form-row .btn {
+  align-self: flex-end;
+}
+.btn {
+  text-decoration: none;
+  color: white;
+  background: hsl(37, 66%, 9%);
+  padding: 0.5rem 1rem;
+  border-radius: 5rem;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+.page-title {
+  margin: 0;
+  padding: 5rem 0 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.four-o-four,
+.error-message-stack-trace {
+  margin: 0;
+  padding: 5rem 0 1rem 0;
+}
+.section {
+  padding: 1.5rem 0 0 0;
+}
+.recipe-grid {
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+
+.recipe-card {
+  flex-basis: 48%;
+  margin-bottom: 2%;
+  background-color: white;
+  padding: 1.1rem 0.7rem;
+  position: relative;
+
+  background-image: linear-gradient(
+      180deg,
+      white 3rem,
+      #f0a4a4 calc(3rem),
+      #f0a4a4 calc(3rem + 2px),
+      transparent 1px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 1.5rem,
+      #e2f3fa 1px,
+      #e2f3fa calc(1.5rem + 1px)
+    );
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+@media (max-width: 900px) {
+  .recipe-grid {
+    flex-direction: column;
+  }
+  .recipe-card {
+    padding: 1.2rem 0.2rem;
+    margin-bottom: 7%;
+  }
+}
+.recipe-page .view {
+  display: none;
+}
+h2 {
+  margin: 0;
+  text-align: center;
+  top: -4px;
+  position: relative;
+  color: hsl(37, 66%, 9%);
+  margin: 0 2.2rem;
+  font-weight: 400;
+}
+.recipe-icon::before {
+  content: url(../images/black-spoon.svg);
+  position: absolute;
+  margin-left: -2.5rem;
+  margin-top: -0.05rem;
+}
+.directions-icon::before {
+  content: url(../images/black-chef.svg);
+  position: absolute;
+  margin-left: -1.6rem;
+  margin-top: -0.5rem;
+}
+.comments-icon::before {
+  content: url(../images/black-chefs.svg);
+  position: absolute;
+  margin-left: -2.6rem;
+  margin-top: -0.5rem;
+}
+.recipe-list span {
+  font-weight: 400;
+}
+.recipe-list,
+.recipe-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.recipe-list ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.ingredients,
+.directions {
+  text-align: center;
+  display: block;
+  font-weight: 400;
+}
+.ingredients-list {
+  column-count: 2;
+  white-space: pre-wrap;
+  margin-bottom: 3rem;
+}
+.profile {
+  margin: 0;
+  margin-bottom: 3rem;
+}
+.directions-list {
+  column-count: 1;
+  white-space: pre-wrap;
+}
+.card-footer .chef {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0.3rem;
+}
+
+.chef a,
+.email a {
+  color: hsl(37, 66%, 9%);
+  text-decoration: none;
+}
+.chef a:hover,
+.email a:hover {
+  text-decoration: underline;
+}
+.chef.title {
+  font-size: 1.5rem;
+  position: relative;
+  top: -1rem;
+}
+.view {
+  background: hsl(37, 66%, 9%);
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.view a {
+  color: white;
+  text-decoration: none;
+}
+.comments {
+  flex-basis: 98%;
+  background-image: linear-gradient(
+    180deg,
+    white 3rem,
+    #f0a4a4 calc(3rem),
+    #f0a4a4 calc(3rem + 2px),
+    transparent 1px
+  );
+  background-color: white;
+  padding: 1rem;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+.comments p {
+  margin-top: 0.5rem;
+}
+fieldset {
+  padding: 1.5rem;
+  margin-top: -1rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: hsl(0, 0%, 0%);
+}
+legend {
+  font-size: 24px;
+  font-weight: 400;
+}
+.two-column-container input,
+.two-column-container select,
+.two-column-container textarea {
+  margin-bottom: 1rem;
+}
+.btn-outline {
+  background: none;
+  color: hsl(37, 66%, 9%);
+  border: 2px solid hsl(37, 66%, 9%);
+  font-size: 1rem;
+}
+::placeholder {
+  color: hsl(0, 1%, 74%);
+  font-weight: 300;
+}
+.form-btn-row {
+  justify-content: flex-end;
+}
+.container.loading {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+.loading-spinner::after {
+  content: '';
+  z-index: 999;
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  border: 20px solid transparent;
+  border-bottom-color: hsl(37, 66%, 9%);
+  animation: spin infinite 1.25s ease-in;
+  mix-blend-mode: multiply;
+}
+
+.loading-spinner::before {
+  content: '';
+  z-index: 999;
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  border: 20px solid transparent;
+  border-top-color: hsl(37, 66%, 9%);
+  animation: spin infinite 2s ease-in-out;
+  mix-blend-mode: multiply;
+}
+
+@keyframes spin {
+  to {
+    rotate: 360deg;
+  }
+}

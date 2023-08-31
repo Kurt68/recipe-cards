@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet" />
+
+    <title>Recipe App</title>
+</head>
+
+<body>
+    <header class="header">
+        <span class="spoon"><img src="images/spoon.svg" alt="" />My Recipes</span>
+
+        <nav class="navigation">
+            <ul class="link-list">
+                <li class="link"><a href="/recipes.html">Recipes</a></li>
+                <li class="link"><a href="/chefs.html">Chefs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 class="page-title">Edit Recipe</h1>
+        <main>
+            <section class="section">
+                <form class="form">
+                    <fieldset>
+                        <legend>Edit your recipe</legend>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="chefsName">Chefs Name</label>
+                                <input type="text" name="chefsName" id="chefsName">
+
+                                <label for="recipeTitle">Recipe Title</label>
+                                <input type="text" name="recipeTitle" id="recipeTitle">
+
+                                <label for="servesHowMany">Serves How Many People</label>
+                                <input type="text" name="servesHowMany" id="servesHowMany">
+
+                                <label for="prepTime">Prep Time</label>
+                                <input type="text" name="prepTime" id="prepTime">
+
+                                <label for="totalTime">Total Time</label>
+                                <input type="text" name="totalTime" id="totalTime">
+                            </div>
+                            <div class="form-group">
+                                <label for="ingredients">Ingredients</label>
+                                <textarea id="ingredients"></textarea>
+
+                                <label for="directions">Directions</label>
+                                <textarea name="directions" id="directions"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-row form-btn-row">
+                        <a class="btn btn-outline" href="/recipes-1.html">Cancel</a>
+                        <button class="btn">Save</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <span class="chef"><img src="images/chef.svg" alt="" /></span>
+        <p>My Recipes &copy;2023</p>
+        <span class="spoon"><img src="images/spoon.svg" alt="" /></span>
+    </footer>
+</body>
+
+</html>
