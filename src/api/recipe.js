@@ -1,7 +1,7 @@
 import { baseApi } from './base'
 
-export async function getRecipes(options) {
-  return await baseApi.get('recipes', options).then((res) => res.data)
+export function getRecipes(options) {
+  return baseApi.get('recipes', options).then((res) => res.data)
 }
 export function getRecipe(recipeId, options) {
   return baseApi.get(`recipes/${recipeId}`, options).then((res) => res.data)
