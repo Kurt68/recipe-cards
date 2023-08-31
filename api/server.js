@@ -9,7 +9,13 @@ server.use(middlewares)
 server.use(
   jsonServer.rewriter({
     '/api/*': '/$1',
-    // '/recipes/:resource/:id/show': '/:resource/:id'
+    recipes: 'recipes',
+    '/recipes/:recipeId/': '/:recipeId',
+    '/recipes/:recipeId/edit': '/:recipeId',
+    new: 'new',
+    chefs: 'chefs',
+    '/chefs/:chefId': '/:chefId',
+    '*': '*',
   })
 )
 server.use(router)
@@ -18,4 +24,4 @@ server.listen(3000, () => {
 })
 
 // Export the Server API
-export {server}
+export { server }
