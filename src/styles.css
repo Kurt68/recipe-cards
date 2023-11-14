@@ -85,10 +85,6 @@ body {
   .form-row {
     flex-direction: column;
   }
-  .page-title {
-    flex-direction: column;
-    justify-content: left;
-  }
 }
 .two-column-container {
   display: flex;
@@ -140,6 +136,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .four-o-four,
 .error-message-stack-trace {
