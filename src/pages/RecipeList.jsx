@@ -11,6 +11,7 @@ export function RecipeList() {
     chefs,
     searchParams: { query, chefId },
   } = useLoaderData()
+  // console.log(recipes)
 
   const queryRef = useRef()
   const chefIdRef = useRef()
